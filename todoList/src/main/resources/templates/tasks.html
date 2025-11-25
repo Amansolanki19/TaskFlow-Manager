@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo Application</title>
+</head>
+<body>
+    <h1>Welcome to the ToDo Application</h1>
+    <div>
+        <form th:action="@{/}" method="post">
+            <div>
+                <input type="text" name="title" placeholder="Add a new task.." required/>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <div th:each="task : ${tasks}">
+            <span th:text="${task.title}">Task Title</span>
+
+        </div>
+        <div th:if="${#lists.isEmpty(tasks)}">No tasks available</div>
+    </div>
+</body>
+</html>
