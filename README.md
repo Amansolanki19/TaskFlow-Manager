@@ -110,10 +110,4 @@ http://localhost:8080/tasks
 - Pagination & Sorting
 - Unit and Integration Tests
 
-## 🤝 Contributing
 
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
-
-
-
-⭐ If you found this project useful, consider giving it a star!
